@@ -1,0 +1,26 @@
+.admin {
+    &__page-nav.extension-tab {
+        [data-role="title"] strong {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            &:after {
+                padding-right: 1rem;
+                content: 'extension';
+                font-size: .9rem;
+                font-weight: normal;
+                letter-spacing: .3rem;
+                color: #adadad;
+
+                @media(max-width: 1440px) {
+                    content: 'ext';
+                }
+
+                @media(max-width: 1024px) {
+                    content: '';
+                }
+            }
+        }
+    }
+}
