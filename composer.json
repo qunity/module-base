@@ -1,8 +1,8 @@
 {
     "name": "qunity/module-base",
     "description": "N/A",
-    "version": "0.1.5",
-    "type": "qunity-magento2-module",
+    "version": "0.1.6",
+    "type": "qunity-packeage",
     "license": "proprietary",
     "require": {
         "php": "^8.1",
@@ -16,8 +16,5 @@
         "psr-4": {
             "Qunity\\Base\\": "src"
         }
-    },
-    "extra": {
-        "magento2-module": "Qunity_Base"
     }
 }
