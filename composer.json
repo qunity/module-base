@@ -1,8 +1,8 @@
 {
     "name": "qunity/module-base",
     "description": "N/A",
-    "version": "0.1.6",
-    "type": "qunity-packeage",
+    "version": "0.1.7",
+    "type": "qunity-package",
     "license": "proprietary",
     "require": {
         "php": "^8.1",
