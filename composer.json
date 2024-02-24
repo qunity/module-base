@@ -1,8 +1,8 @@
 {
     "name": "qunity/module-base",
     "description": "N/A",
-    "version": "0.1.8",
-    "type": "qunity-package",
+    "version": "0.1.9",
+    "type": "qunity-magento2-module",
     "license": "proprietary",
     "require": {
         "php": "^8.1",
