@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Qunity\Base\Component;
+namespace Qunity\Base\Stdlib;
 
 use Magento\Framework\Stdlib\ArrayManager as MagentoArrayManager;
 
