@@ -1,27 +1,25 @@
-& when (@media-common = true) {
-    .admin {
-        &__page-nav.extension-tab {
-            [data-role="title"] strong {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+// noinspection LessResolvedByNameOnly
 
-                &:after {
-                    padding-right: 1rem;
-                    content: 'extension';
-                    font-size: .9rem;
-                    font-weight: normal;
-                    letter-spacing: .3rem;
-                    color: #adadad;
+.config-nav > .extension-tab {
+    [data-role="title"] > strong {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
 
-                    @media (max-width: 1440px) {
-                        content: 'ext';
-                    }
+        &:after {
+            content: 'extension';
+            padding-right: 1rem;
+            font-size: .9rem;
+            font-weight: normal;
+            letter-spacing: .3rem;
+            color: @color-gray68;
 
-                    @media (max-width: 1024px) {
-                        content: '';
-                    }
-                }
+            @media (max-width: @screen__xl) {
+                content: 'ext';
+            }
+
+            @media (max-width: @screen__l) {
+                content: '';
             }
         }
     }
