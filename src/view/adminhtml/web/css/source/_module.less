@@ -1,26 +1,26 @@
 // noinspection LessResolvedByNameOnly
 
 .config-nav > .extension-tab {
-    [data-role="title"] > strong {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+  [data-role="title"] > strong {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-        &:after {
-            content: 'extension';
-            padding-right: 1rem;
-            font-size: .9rem;
-            font-weight: normal;
-            letter-spacing: .3rem;
-            color: @color-gray68;
+    &:after {
+      content: 'extension';
+      padding-right: 1rem;
+      font-size: .9rem;
+      font-weight: normal;
+      letter-spacing: .3rem;
+      color: @color-gray68;
 
-            @media (max-width: @screen__xl) {
-                content: 'ext';
-            }
+      @media (max-width: @screen__xl) {
+        content: 'ext';
+      }
 
-            @media (max-width: @screen__l) {
-                content: '';
-            }
-        }
+      @media (max-width: @screen__l) {
+        content: '';
+      }
     }
+  }
 }

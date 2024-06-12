@@ -17,7 +17,7 @@ class BackendUrl extends Template
     private const JS_PROPERTY_URLS_NAME = 'urls';
 
     /**
-     * Custom URL list for AdminHtml area
+     * Custom URL list for current area
      * @var CustomUrlInterface[]
      */
     private array $customUrlList;
@@ -55,7 +55,7 @@ class BackendUrl extends Template
     }
 
     /**
-     * Check if exist registered custom URL list
+     * Check if exist custom URL list
      *
      * @return bool
      */
@@ -65,7 +65,7 @@ class BackendUrl extends Template
     }
 
     /**
-     * Get custom URL list for AdminHtml area
+     * Get custom URL list for current area
      *
      * @return CustomUrlInterface[]
      */

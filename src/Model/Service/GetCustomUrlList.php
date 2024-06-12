@@ -35,7 +35,7 @@ class GetCustomUrlList implements GetCustomUrlListInterface
      */
     public function execute(): array
     {
-        if (!empty($this->items)) {
+        if (isset($this->items)) {
             return $this->items;
         }
 
