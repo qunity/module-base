@@ -20,12 +20,12 @@ class GetCustomUrlList implements GetCustomUrlListInterface
     /**
      * @param UrlInterface $urlBuilder
      * @param CustomUrlInterfaceFactory $customUrlFactory
-     * @param array $urlListData
+     * @param array $routePathListData
      */
     public function __construct(
         private readonly UrlInterface $urlBuilder,
         private readonly CustomUrlInterfaceFactory $customUrlFactory,
-        private readonly array $urlListData = []
+        private readonly array $routePathListData = []
     ) {
         // ...
     }
@@ -39,7 +39,7 @@ class GetCustomUrlList implements GetCustomUrlListInterface
             return $this->items;
         }
 
-        foreach ($this->urlListData as $code => $item) {
+        foreach ($this->routePathListData as $code => $item) {
             $item[CustomUrlInterface::CODE] = $code;
 
             $routePath = $item[CustomUrlInterface::ROUTE_PATH];
