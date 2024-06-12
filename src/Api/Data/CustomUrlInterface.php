@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Qunity\Base\Api\Data\LayoutHandle;
+namespace Qunity\Base\Api\Data;
 
 interface CustomUrlInterface
 {

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Qunity\Base\Model\Data\LayoutHandle;
+namespace Qunity\Base\Model\Data;
 
 use Magento\Framework\DataObject;
-use Qunity\Base\Api\Data\LayoutHandle\CustomUrlInterface;
+use Qunity\Base\Api\Data\CustomUrlInterface;
 
 class CustomUrl extends DataObject implements CustomUrlInterface
 {

@@ -6,15 +6,15 @@
 
 declare(strict_types=1);
 
-namespace Qunity\Base\Api\Service\LayoutHandle;
+namespace Qunity\Base\Api\Service;
 
 interface GetCustomUrlListInterface
 {
     /**
-     * Get registered custom URL list by area code
+     * Get registered custom URL list
      *
      * @param string|null $areaCode
-     * @return \Qunity\Base\Api\Data\LayoutHandle\CustomUrlInterface[]
+     * @return \Qunity\Base\Api\Data\CustomUrlInterface[]
      */
     public function execute(string $areaCode = null): array;
 }
