@@ -1,0 +1,14 @@
+<?php
+/**
+ * @var Qunity\Base\Block\Adminhtml\BackendUrl $block
+ */
+?>
+<?php if ($block->hasCustomUrlList()): ?>
+    <script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": <?= /* @noEscape */ $block->getJsLayout() ?>
+            }
+        }
+    </script>
+<?php endif; ?>

@@ -7,7 +7,6 @@ namespace Qunity\Base\Api\Data;
 interface CustomUrlInterface
 {
     public const CODE = 'code';
-    public const AREA_CODE = 'area_code';
     public const URL = 'url';
     public const ROUTE_PATH = 'route_path';
 
@@ -25,21 +24,6 @@ interface CustomUrlInterface
      * @return $this
      */
     public function setCode(string $code): self;
-
-    /**
-     * Get custom URL area code
-     *
-     * @return string|null
-     */
-    public function getAreaCode(): ?string;
-
-    /**
-     * Set custom URL area code
-     *
-     * @param string $code
-     * @return $this
-     */
-    public function setAreaCode(string $code): self;
 
     /**
      * Get custom URL

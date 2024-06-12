@@ -6,7 +6,6 @@ namespace Qunity\Base\Block\Adminhtml;
 
 use Magento\Backend\Block\Template;
 use Magento\Backend\Block\Template\Context;
-use Magento\Framework\App\Area as AppArea;
 use Magento\Framework\Serialize\SerializerInterface;
 use Magento\Framework\Stdlib\ArrayManager;
 use Qunity\Base\Api\Data\CustomUrlInterface;
@@ -18,7 +17,7 @@ class BackendUrl extends Template
     private const JS_PROPERTY_URLS_NAME = 'urls';
 
     /**
-     * Custom URL list for current active area
+     * Custom URL list for AdminHtml area
      * @var CustomUrlInterface[]
      */
     private array $customUrlList;
@@ -73,8 +72,7 @@ class BackendUrl extends Template
     private function getCustomUrlList(): array
     {
         if (!isset($this->customUrlList)) {
-            $areaCode = AppArea::AREA_ADMINHTML;
-            $this->customUrlList = $this->getCustomUrlList->execute($areaCode);
+            $this->customUrlList = $this->getCustomUrlList->execute();
         }
 
         return $this->customUrlList;

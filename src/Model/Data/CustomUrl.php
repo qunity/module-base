@@ -29,23 +29,6 @@ class CustomUrl extends DataObject implements CustomUrlInterface
     /**
      * @inheritDoc
      */
-    public function getAreaCode(): ?string
-    {
-        return $this->hasData(self::AREA_CODE)
-            ? (string) $this->getData(self::AREA_CODE) : null;
-    }
-
-    /**
-     * @inheritDoc
-     */
-    public function setAreaCode(string $code): CustomUrlInterface
-    {
-        return $this->setData(self::AREA_CODE, $code);
-    }
-
-    /**
-     * @inheritDoc
-     */
     public function getUrl(): ?string
     {
         return $this->hasData(self::URL)

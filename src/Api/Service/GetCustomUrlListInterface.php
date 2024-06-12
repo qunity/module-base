@@ -13,8 +13,7 @@ interface GetCustomUrlListInterface
     /**
      * Get registered custom URL list
      *
-     * @param string|null $areaCode
      * @return \Qunity\Base\Api\Data\CustomUrlInterface[]
      */
-    public function execute(string $areaCode = null): array;
+    public function execute(): array;
 }
