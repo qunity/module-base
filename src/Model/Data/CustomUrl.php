@@ -59,4 +59,21 @@ class CustomUrl extends DataObject implements CustomUrlInterface
     {
         return $this->setData(self::ROUTE_PATH, $path);
     }
+
+    /**
+     * @inheritDoc
+     */
+    public function getRouteParams(): ?array
+    {
+        return $this->hasData(self::ROUTE_PARAMS)
+            ? (array) $this->getData(self::ROUTE_PARAMS) : null;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public function setRouteParams(array $params): CustomUrlInterface
+    {
+        return $this->setData(self::ROUTE_PARAMS, $params);
+    }
 }

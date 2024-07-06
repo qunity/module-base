@@ -9,6 +9,7 @@ interface CustomUrlInterface
     public const CODE = 'code';
     public const URL = 'url';
     public const ROUTE_PATH = 'route_path';
+    public const ROUTE_PARAMS = 'route_params';
 
     /**
      * Get custom URL code
@@ -54,4 +55,19 @@ interface CustomUrlInterface
      * @return $this
      */
     public function setRoutePath(string $path): self;
+
+    /**
+     * Get custom URL route params
+     *
+     * @return array|null
+     */
+    public function getRouteParams(): ?array;
+
+    /**
+     * Set custom URL route params
+     *
+     * @param array $params
+     * @return $this
+     */
+    public function setRouteParams(array $params): self;
 }

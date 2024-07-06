@@ -42,8 +42,10 @@ class GetCustomUrlList implements GetCustomUrlListInterface
         foreach ($this->pathListData as $code => $item) {
             $item[CustomUrlInterface::CODE] = $code;
 
-            $routePath = $item[CustomUrlInterface::ROUTE_PATH];
-            $item[CustomUrlInterface::URL] = $this->urlBuilder->getUrl($routePath);
+            $routePath = $item[CustomUrlInterface::ROUTE_PATH] ?? null;
+            $routeParams = $item[CustomUrlInterface::ROUTE_PARAMS] ?? null;
+
+            $item[CustomUrlInterface::URL] = $this->urlBuilder->getUrl($routePath, $routeParams);
 
             $this->items[$code] = $this->customUrlFactory->create(['data' => $item]);
         }

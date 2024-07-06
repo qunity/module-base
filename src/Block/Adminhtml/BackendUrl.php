@@ -23,17 +23,17 @@ class BackendUrl extends Template
     private array $customUrlList;
 
     /**
-     * @param Context $context
      * @param ArrayManager $arrayManager
      * @param GetCustomUrlListInterface $getCustomUrlList
      * @param SerializerInterface $serializer
+     * @param Context $context
      * @param array $data
      */
     public function __construct(
-        Context $context,
         private readonly ArrayManager $arrayManager,
         private readonly GetCustomUrlListInterface $getCustomUrlList,
         private readonly SerializerInterface $serializer,
+        Context $context,
         array $data = [],
     ) {
         parent::__construct($context, $data);
