@@ -24,15 +24,15 @@ class BackendUrl extends Template
 
     /**
      * @param ArrayManager $arrayManager
-     * @param GetCustomUrlListInterface $getCustomUrlList
      * @param SerializerInterface $serializer
+     * @param GetCustomUrlListInterface $getCustomUrlList
      * @param Context $context
      * @param array $data
      */
     public function __construct(
         private readonly ArrayManager $arrayManager,
-        private readonly GetCustomUrlListInterface $getCustomUrlList,
         private readonly SerializerInterface $serializer,
+        private readonly GetCustomUrlListInterface $getCustomUrlList,
         Context $context,
         array $data = [],
     ) {
@@ -45,8 +45,8 @@ class BackendUrl extends Template
     public function getJsLayout(): string
     {
         $registeredUrls = [];
-        foreach ($this->getCustomUrlList() as $alias => $customUrl) {
-            $registeredUrls[$alias] = $customUrl->getUrl();
+        foreach ($this->getCustomUrlList() as $code => $customUrl) {
+            $registeredUrls[$code] = $customUrl->getUrl();
         }
 
         $this->updateJsLayout($registeredUrls);
