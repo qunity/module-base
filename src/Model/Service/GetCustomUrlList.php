@@ -25,7 +25,7 @@ class GetCustomUrlList implements GetCustomUrlListInterface
     public function __construct(
         private readonly UrlInterface $urlBuilder,
         private readonly CustomUrlInterfaceFactory $customUrlFactory,
-        private readonly array $pathListData = []
+        private readonly array $pathListData
     ) {
         // ...
     }
