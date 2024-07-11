@@ -69,7 +69,7 @@ class BackendUrl extends Template
      *
      * @return CustomUrlInterface[]
      */
-    private function getCustomUrlList(): array
+    public function getCustomUrlList(): array
     {
         if (!isset($this->customUrlList)) {
             $this->customUrlList = $this->getCustomUrlList->execute();

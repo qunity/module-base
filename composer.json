@@ -1,7 +1,7 @@
 {
   "name": "qunity/module-base",
   "description": "N/A",
-  "version": "0.1.17",
+  "version": "0.1.18",
   "type": "qunity-magento2-module",
   "license": "proprietary",
   "require": {

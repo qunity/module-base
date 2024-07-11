@@ -14,7 +14,7 @@ define(function () {
        * @public
        *
        * @param {String} code
-       * @param {{String:String}} params
+       * @param {{String:String|Number}} params
        * @param {Boolean} asSearchParams
        *
        * @return {String}
