@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Qunity\Base\Block\Adminhtml;
 
 use Magento\Backend\Block\Template;
-use Magento\Backend\Block\Template\Context;
 use Magento\Framework\Serialize\SerializerInterface;
 use Magento\Framework\Stdlib\ArrayManager;
 use Qunity\Base\Api\Data\CustomUrlInterface;
@@ -26,14 +25,14 @@ class BackendUrl extends Template
      * @param ArrayManager $arrayManager
      * @param SerializerInterface $serializer
      * @param GetCustomUrlListInterface $getCustomUrlList
-     * @param Context $context
+     * @param Template\Context $context
      * @param array $data
      */
     public function __construct(
         private readonly ArrayManager $arrayManager,
         private readonly SerializerInterface $serializer,
         private readonly GetCustomUrlListInterface $getCustomUrlList,
-        Context $context,
+        Template\Context $context,
         array $data = [],
     ) {
         parent::__construct($context, $data);
